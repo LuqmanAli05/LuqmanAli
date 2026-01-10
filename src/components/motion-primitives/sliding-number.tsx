@@ -2,18 +2,21 @@
 import { useEffect, useId } from "react";
 import {
   MotionValue,
+  Transition,
   motion,
   useSpring,
   useTransform,
   motionValue,
 } from "motion/react";
+
 import useMeasure from "react-use-measure";
 
-const TRANSITION = {
+const TRANSITION: Transition = {
   type: "spring",
   stiffness: 280,
   damping: 18,
   mass: 0.3,
+  bounce: 0,
 };
 
 function Digit({ value, place }: { value: number; place: number }) {
