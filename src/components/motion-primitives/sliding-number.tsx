@@ -4,12 +4,19 @@ import {
   MotionValue,
   Transition,
   motion,
+  SpringOptions,
   useSpring,
   useTransform,
   motionValue,
 } from "motion/react";
 
 import useMeasure from "react-use-measure";
+
+const SPRING: SpringOptions = {
+  stiffness: 280,
+  damping: 18,
+  mass: 0.3,
+};
 
 const TRANSITION: Transition = {
   type: "spring",
@@ -18,10 +25,10 @@ const TRANSITION: Transition = {
   mass: 0.3,
   bounce: 0,
 };
-
 function Digit({ value, place }: { value: number; place: number }) {
   const valueRoundedToPlace = Math.floor(value / place) % 10;
-  const animatedValue = useSpring(valueRoundedToPlace, TRANSITION);
+
+  const animatedValue = useSpring(valueRoundedToPlace, SPRING);
 
   useEffect(() => {
     animatedValue.set(valueRoundedToPlace);
