@@ -21,8 +21,7 @@ const TRANSITION: Transition = {
 
 function Digit({ value, place }: { value: number; place: number }) {
   const valueRoundedToPlace = Math.floor(value / place) % 10;
-  const initial = motionValue<number>(valueRoundedToPlace);
-  const animatedValue = useSpring(initial, TRANSITION);
+  const animatedValue = useSpring(valueRoundedToPlace, TRANSITION);
 
   useEffect(() => {
     animatedValue.set(valueRoundedToPlace);
