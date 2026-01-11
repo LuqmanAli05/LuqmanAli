@@ -1,43 +1,43 @@
 export const PORTFOLIO_CONTENT = [
   {
-    name: "GreenScape Landscaping",
+    name: "E-Commerce Platform",
     description:
-      "Modern landing page for a landscaping company featuring service showcases, before/after galleries, and instant quote requests.",
+      "Full-stack e-commerce solution built with Next.js and Node.js, featuring real-time inventory, secure payments, and advanced analytics dashboard.",
     img: "/images/portfolio/eco.jpg",
     url: "#",
   },
   {
-    name: "Starlight Prom Nights",
+    name: "SaaS Management Dashboard",
     description:
-      "Vibrant promotional page for high school prom parties with ticket booking, photo galleries, and theme selection.",
+      "Enterprise SaaS platform with React frontend and Laravel backend. Features include user management, billing integration, and comprehensive reporting.",
     img: "/images/portfolio/event.jpg",
     url: "#",
   },
   {
-    name: "Prestige College of Arts",
+    name: "Educational Portal",
     description:
-      "Elegant academic landing page with program highlights, virtual campus tours, and application portals.",
+      "Interactive learning management system with video streaming, progress tracking, and gamification elements. Built with Next.js and MySQL.",
     img: "/images/portfolio/art.jpg",
     url: "#",
   },
   {
-    name: "CycleSpot Rentals",
+    name: "Real Estate Marketplace",
     description:
-      "Bike rental platform with location-based availability, pricing calculators, and secure online bookings.",
+      "Property listing platform with advanced search filters, virtual tours, and integrated CRM. Powered by React and AWS infrastructure.",
     img: "/images/portfolio/bike.jpg",
     url: "#",
   },
   {
-    name: "Bella Cucina Restaurant",
+    name: "Restaurant POS System",
     description:
-      "Appetizing restaurant landing page with menu displays, reservation system, and chef's specials highlights.",
+      "Cloud-based point-of-sale system for restaurants with order management, inventory tracking, and kitchen display integration.",
     img: "/images/portfolio/resturant.jpg",
     url: "#",
   },
   {
-    name: "SereneMind Meditation",
+    name: "Healthcare Booking App",
     description:
-      "Calming meditation app interface with guided session timers, progress tracking, and relaxation music integration.",
+      "Patient appointment scheduling system with doctor profiles, telehealth integration, and automated reminders. HIPAA-compliant architecture.",
     img: "/images/portfolio/meditation.jpg",
     url: "#",
   },

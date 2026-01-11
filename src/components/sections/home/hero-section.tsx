@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import { TextEffect } from "@/components/motion-primitives/text-effect";
@@ -105,7 +104,7 @@ export default function HeroSection() {
                   as="h1"
                   className="mt-8 text-balance text-5xl md:text-7xl lg:mt-16 xl:text-[5.25rem] font-semibold"
                 >
-                  Designs That Captivate, Brands That Shine.
+                  Full Stack Developer. Problem Solver. Digital Craftsman.
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -115,9 +114,7 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  At Lume Studio, we blend creativity and strategy to craft
-                  stunning websites, striking visuals, and unforgettable brand
-                  experiences that set you apart.
+                  Hi, I'm Luqman Ali, a full stack web developer with 6+ years of experience building scalable, high-performance web applications. From concept to deployment, I turn ideas into elegant digital solutions.
                 </TextEffect>
 
                 <AnimatedGroup
@@ -144,8 +141,8 @@ export default function HeroSection() {
                       className="rounded-xl px-5 text-base"
                     >
                       <Link
-                        href="https://github.com/haramishra/lume-studio-next"
-                        target="_black"
+                        href="https://github.com/luqmanali05"
+                        target="_blank"
                       >
                         <svg
                           className="size-6"
@@ -168,15 +165,15 @@ export default function HeroSection() {
                     variant="ghost"
                     className="h-10.5 rounded-xl px-5"
                   >
-                    <Link href="/full-version">
-                      <span className="text-nowrap">Full Version</span>
+                    <Link href="/#portfolio">
+                      <span className="text-nowrap">View Projects</span>
                     </Link>
                   </Button>
                 </AnimatedGroup>
               </div>
             </div>
           </div>
-          <AnimatedGroup
+          {/* <AnimatedGroup
             variants={{
               container: {
                 visible: {
@@ -192,7 +189,7 @@ export default function HeroSection() {
             <div className="relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
               <LogoCloud />
             </div>
-          </AnimatedGroup>
+          </AnimatedGroup> */}
         </section>
       </div>
     </>

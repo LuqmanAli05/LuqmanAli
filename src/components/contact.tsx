@@ -1,3 +1,5 @@
+"use client";
+
 import { Mail, MapPin, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,10 +9,41 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { ScrollView } from "./scroll-view";
+import { sendContactEmail } from "@/lib/send-email";
+import { useState } from "react";
 
 export default function FeaturesSection() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  async function handleSubmit(formData: FormData) {
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    const result = await sendContactEmail(formData);
+
+    if (result.success) {
+      setSubmitStatus({
+        type: "success",
+        message: "Thank you! Your message has been sent successfully.",
+      });
+      // Reset form
+      const form = document.querySelector("form") as HTMLFormElement;
+      form?.reset();
+    } else {
+      setSubmitStatus({
+        type: "error",
+        message: result.error || "Failed to send message. Please try again.",
+      });
+    }
+
+    setIsSubmitting(false);
+  }
   return (
-    <section className="py-16 md:py-32 bg-gray-50 dark:bg-transparent">
+    <section className="py-16 md:py-32 bg-gray-50 dark:bg-transparent" id="contact">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid items-center gap-12 md:grid-cols-2 md:gap-12 lg:grid-cols-5 lg:gap-24">
           <div className="lg:col-span-2">
@@ -30,12 +63,18 @@ export default function FeaturesSection() {
             <ScrollView delay={0.2}>
               <ul className="mt-8 divide-y border-y *:flex *:items-center *:gap-3 *:py-3">
                 <li>
-                  <Link href="#link" className="hover:text-accent-foreground">
+                  <Link href="https://wa.me/923365102108" className="hover:text-accent-foreground">
                     <Mail className="size-5 mr-2 inline" />
-                    <span>contact@company.com</span>
+                    <span>Send a message on WhatsApp</span>
                   </Link>
                 </li>
                 <li>
+                  <Link href="mailto:contact@luqmanali.com" className="hover:text-accent-foreground">
+                    <Mail className="size-5 mr-2 inline" />
+                    <span>contact@luqmanali.com</span>
+                  </Link>
+                </li>
+                {/* <li>
                   <Link href="#link" className="hover:text-accent-foreground">
                     <PhoneCall className="size-5 mr-2 inline" />
                     <span>+1 555-555-5555</span>
@@ -52,7 +91,7 @@ export default function FeaturesSection() {
                     <MapPin className="size-5 mr-2 inline" />
                     <span>123 Main St, Anytown UK</span>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </ScrollView>
           </div>
@@ -70,17 +109,34 @@ export default function FeaturesSection() {
                 </div>
 
                 <form
-                  action=""
+                  action={handleSubmit}
                   className="**:[&>label]:block mt-12 space-y-6 *:space-y-3"
                 >
+                  {submitStatus.type && (
+                    <div
+                      className={`p-4 rounded-md ${
+                        submitStatus.type === "success"
+                          ? "bg-green-50 dark:bg-green-900/20 text-green-800 dark:text-green-200"
+                          : "bg-red-50 dark:bg-red-900/20 text-red-800 dark:text-red-200"
+                      }`}
+                    >
+                      {submitStatus.message}
+                    </div>
+                  )}
+
                   <div>
                     <Label htmlFor="name">Full name</Label>
-                    <Input type="text" id="name" required />
+                    <Input type="text" id="name" name="name" required />
                   </div>
 
                   <div>
-                    <Label htmlFor="email">Work Email</Label>
-                    <Input type="email" id="email" required />
+                    <Label htmlFor="email">Email</Label>
+                    <Input type="email" id="email" name="email" required />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="subject">Subject</Label>
+                    <Input type="text" id="subject" name="subject" required />
                   </div>
 
                   {/* <div>
@@ -120,10 +176,12 @@ export default function FeaturesSection() {
 
                   <div>
                     <Label htmlFor="msg">Message</Label>
-                    <Textarea id="msg" rows={3} />
+                    <Textarea id="msg" name="message" rows={3} required />
                   </div>
 
-                  <Button>Submit</Button>
+                  <Button type="submit" disabled={isSubmitting}>
+                    {isSubmitting ? "Sending..." : "Submit"}
+                  </Button>
                 </form>
               </Card>
             </ScrollView>

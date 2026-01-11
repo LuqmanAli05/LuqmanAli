@@ -1,28 +1,28 @@
-import { Circle, Cpu, Lock, Sparkles, Zap } from "lucide-react";
+import { Circle } from "lucide-react";
 import { ScrollView } from "./scroll-view";
 import Image from "next/image";
 
 const ourPrinciples = [
   {
-    title: "Creativity with Purpose",
+    title: "Clean Code",
     description:
-      "Our designs aren’t just pretty; they’re built to solve problems and make an impact.",
+      "I write maintainable, scalable code that follows best practices and industry standards.",
   },
   {
-    title: "Collaboration is Key",
+    title: "User-Centric",
     description:
-      "We work with you, not just for you. Great ideas come from teamwork.",
+      "Every project starts with understanding user needs and delivering exceptional experiences.",
   },
 
   {
-    title: "Honest & Transparent",
+    title: "Performance First",
     description:
-      "No confusing jargon or hidden fees. Just clear communication and real results.",
+      "Optimized applications that load fast and scale efficiently under any load.",
   },
   {
-    title: "Details Matter",
+    title: "Continuous Learning",
     description:
-      "The little things make a big difference. We sweat the small stuff, so you don’t have to.",
+      "Staying current with the latest technologies and best practices in web development.",
   },
 ];
 
@@ -33,16 +33,12 @@ export default function ContentSection() {
         <div className="mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <ScrollView>
             <h2 className="text-balance text-4xl font-medium lg:text-5xl">
-              About Us
+              About Me
             </h2>
           </ScrollView>
           <ScrollView>
             <p>
-              Lume Studio was born from a simple idea—great design should do
-              more than just look good; it should make an impact. What started
-              as a passion for creativity turned into a full-fledged design
-              agency dedicated to helping brands tell their stories, connect
-              with audiences, and stand out in a crowded world.
+              I'm a passionate full stack developer with 6+ years of experience crafting robust web applications. My expertise spans modern frontend frameworks like React and Next.js, backend technologies including Node.js and Laravel, and cloud infrastructure on AWS. I specialize in turning complex business requirements into elegant, scalable solutions.
             </p>
           </ScrollView>
         </div>

@@ -1,58 +1,59 @@
 export const SERVICES_LIST = [
   {
-    name: "UI/UX & Web Design",
+    name: "UI/UX Design",
     tags: [
       "Figma",
+      "Adobe XD",
       "Wireframing",
       "Prototyping",
-      "Responsive Design",
-      "User Testing",
-    ],
-    img: "/images/abstract-1.png",
-    url: "#",
-    description:
-      "End-to-end digital design from wireframes to polished interfaces. We create intuitive, visually appealing experiences for websites and apps, backed by user research and iterative testing.",
-  },
-  {
-    name: "Brand Identity Design",
-    tags: [
-      "Logo Design",
-      "Brand Guidelines",
-      "Visual Identity",
-      "Typography",
-      "Color Theory",
-    ],
-    img: "/images/abstract-2.png",
-    url: "#",
-    description:
-      "Comprehensive branding packages including logos, style guides, and asset kits. We craft cohesive visual identities that communicate your brand’s essence across all touchpoints.",
-  },
-  {
-    name: "SEO & Website Audits",
-    tags: [
-      "Technical SEO",
-      "Keyword Strategy",
-      "On-Page Optimization",
-      "Analytics",
-      "Performance Tuning",
-    ],
-    img: "/images/abstract-3.png",
-    url: "#",
-    description:
-      "Data-driven SEO audits and optimizations to improve rankings. We analyze technical health, content gaps, and backlink profiles to drive organic growth.",
-  },
-  {
-    name: "Social Media Marketing",
-    tags: [
-      "Meta Ads",
-      "Instagram Reels",
-      "Content Strategy",
-      "Community Management",
-      "Performance Tracking",
+      "User Research",
     ],
     img: "/images/abstract-5.png",
     url: "#",
     description:
-      "Full-service social media management—from organic content creation to paid campaigns. We build engaging narratives and measurable strategies tailored to each platform.",
+      "Creating intuitive, user-centered designs that combine aesthetics with functionality. From wireframes to high-fidelity prototypes, delivering seamless user experiences across all devices.",
   },
+  {
+    name: "Frontend Development",
+    tags: [
+      "React",
+      "Next.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "Bootstrap",
+    ],
+    img: "/images/abstract-1.png",
+    url: "#",
+    description:
+      "Building responsive, performant user interfaces with modern JavaScript frameworks. Specializing in React and Next.js for seamless, interactive web experiences that engage users.",
+  },
+  {
+    name: "Backend Development",
+    tags: [
+      "Node.js",
+      "Laravel",
+      "CodeIgniter",
+      "MySQL",
+      "REST APIs",
+    ],
+    img: "/images/abstract-2.png",
+    url: "#",
+    description:
+      "Robust server-side solutions with scalable architectures. Expert in Node.js and PHP frameworks, designing secure APIs and efficient database systems for complex applications.",
+  },
+  {
+    name: "E-Commerce Solutions",
+    tags: [
+      "WordPress",
+      "Shopify",
+      "WooCommerce",
+      "Payment Integration",
+      "Custom Solutions",
+    ],
+    img: "/images/abstract-3.png",
+    url: "#",
+    description:
+      "Complete e-commerce platforms from setup to customization. Building online stores with seamless checkout experiences, payment gateway integration, and inventory management.",
+  },
+  
 ];
