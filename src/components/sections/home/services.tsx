@@ -15,22 +15,22 @@ import { ArrowRight, PlusIcon } from "lucide-react";
 
 const services = [
   {
-    title: "WooCommerce Stores",
+    title: "UI/UX Design",
     description:
-      "Custom WooCommerce development with advanced features like multi-vendor support, subscription services, custom payment gateways, and inventory management. Optimized for performance and conversions with mobile-first responsive design.",
-    image: "/images/woocommerce-service.png",
+      "User-centered interface design with wireframing, prototyping, and visual design. Creating intuitive experiences that combine beautiful aesthetics with seamless functionality across all devices.",
+    image: "/images/uiux-service.png",
   },
   {
-    title: "Shopify Development",
+    title: "Custom Web Applications",
     description:
-      "Complete Shopify store setup and customization including theme development, app integration, product migration, and custom functionality. From dropshipping to enterprise-level stores with seamless checkout experiences.",
-    image: "/images/shopify-service.png",
+      "Full-stack development using React, Next.js for frontend and Node.js, Laravel for backend. Building scalable, high-performance web applications with modern architecture and clean code.",
+    image: "/images/webapp-service.png",
   },
   {
-    title: "WordPress Business Sites",
+    title: "Business & Ecommerce Sites",
     description:
-      "Professional WordPress websites using Elementor for stunning designs. Custom themes, plugins, SEO optimization, contact forms, booking systems, and membership areas. Fast, secure, and easy to manage.",
-    image: "/images/wordpress-service.png",
+      "Professional websites and online stores using WordPress, Shopify, WooCommerce, and Elementor. From corporate sites to complete ecommerce platforms with payment integration and inventory management.",
+    image: "/images/cms-service.png",
   },
 ];
 
@@ -41,12 +41,12 @@ export default function ServicesSection() {
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center">
           <ScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
-              Services That Drive Sales
+              Complete Web Solutions
             </h2>
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              From WooCommerce and Shopify stores to custom WordPress websites, I deliver complete ecommerce solutions that convert visitors into customers and help businesses scale.
+              From design to deployment, I provide end-to-end web development services. Whether you need a custom application, business website, or ecommerce platform, I deliver solutions tailored to your goals.
             </p>
           </ScrollView>
         </div>

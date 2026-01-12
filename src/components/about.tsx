@@ -4,24 +4,24 @@ import Image from "next/image";
 
 const ourPrinciples = [
   {
-    title: "Conversion-Focused",
+    title: "UI/UX Excellence",
     description:
-      "Every design decision is made to maximize conversions and drive real business results.",
+      "User-centered designs that combine aesthetics with functionality for intuitive experiences.",
   },
   {
-    title: "Mobile-First",
+    title: "Full Stack Development",
     description:
-      "Responsive designs that deliver seamless shopping experiences across all devices.",
+      "End-to-end development from modern frontends (React, Next.js) to robust backends (Node.js, Laravel).",
   },
   {
-    title: "Performance Optimized",
+    title: "CMS & Ecommerce",
     description:
-      "Fast-loading stores with optimized images, caching, and CDN integration for better SEO.",
+      "Expert in WordPress, Shopify, and WooCommerce for business websites and online stores.",
   },
   {
-    title: "Scalable Solutions",
+    title: "Performance & Scale",
     description:
-      "Built to grow with your business, from startup to enterprise-level operations.",
+      "Optimized applications with clean code, fast loading times, and cloud infrastructure.",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function ContentSection() {
           </ScrollView>
           <ScrollView>
             <p>
-              I&apos;m a specialized ecommerce and business website developer with 6+ years of experience building high-converting online stores and professional business websites. My expertise includes WordPress, WooCommerce, Shopify, and Elementor, combined with custom development using React, Next.js, and Laravel. I help businesses establish powerful online presence and drive sales through strategic web solutions.
+              I&apos;m a full-stack developer with 6+ years of experience crafting complete web solutions from concept to deployment. My expertise spans UI/UX design, modern frontend frameworks (React, Next.js), backend technologies (Node.js, Laravel), and content management systems including WordPress, Shopify, and WooCommerce. Whether it&apos;s a custom web application, business website, or ecommerce platform, I deliver scalable solutions that drive results.
             </p>
           </ScrollView>
         </div>

@@ -42,18 +42,18 @@ export const SERVICES_LIST = [
       "Robust server-side solutions with scalable architectures. Expert in Node.js and PHP frameworks, designing secure APIs and efficient database systems for complex applications.",
   },
   {
-    name: "E-Commerce Solutions",
+    name: "CMS Development",
     tags: [
       "WordPress",
       "Shopify",
       "WooCommerce",
-      "Payment Integration",
-      "Custom Solutions",
+      "Elementor",
+      "Business Sites",
     ],
     img: "/images/abstract-3.png",
     url: "#",
     description:
-      "Complete e-commerce platforms from setup to customization. Building online stores with seamless checkout experiences, payment gateway integration, and inventory management.",
+      "Professional business websites and ecommerce solutions using WordPress, Shopify, and WooCommerce. From corporate sites with Elementor to full-featured online stores with payment integration and inventory management.",
   },
   
 ];

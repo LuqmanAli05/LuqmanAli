@@ -104,7 +104,7 @@ export default function HeroSection() {
                   as="h1"
                   className="mt-8 text-balance text-5xl md:text-7xl lg:mt-16 xl:text-[5.25rem] font-semibold"
                 >
-                  Ecommerce Expert. WordPress Specialist. Business Growth Partner.
+                  Full Stack Developer. Designer. Digital Craftsman.
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -114,7 +114,7 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  Hi, I&apos;m Luqman Ali, an ecommerce and business website specialist with 6+ years of experience. I build high-converting online stores using WooCommerce, Shopify, and custom solutions. From WordPress websites to complete ecommerce platforms, I help businesses grow their online presence and increase sales.
+                  Hi, I&apos;m Luqman Ali, a full-stack developer with 6+ years of experience building scalable web applications, stunning UI/UX designs, and powerful business solutions. From React and Next.js to WordPress and Shopify, I create digital experiences that combine beautiful design with robust functionality.
                 </TextEffect>
 
                 <AnimatedGroup

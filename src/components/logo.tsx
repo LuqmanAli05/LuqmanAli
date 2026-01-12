@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 export const Logo = ({ className }: { className?: string }) => {
   return (
-    <svg width="65" height="45" viewBox="0 0 65 45" xmlns="http://www.w3.org/2000/svg">
+    <svg width="50" height="35" viewBox="0 0 65 45" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M8 5 V35 H20"
         stroke="currentColor"
