@@ -114,7 +114,7 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  Hi, I'm Luqman Ali, a full stack web developer with 6+ years of experience building scalable, high-performance web applications. From concept to deployment, I turn ideas into elegant digital solutions.
+                  Hi, I&apos;m Luqman Ali, a full stack web developer with 6+ years of experience building scalable, high-performance web applications. From concept to deployment, I turn ideas into elegant digital solutions.
                 </TextEffect>
 
                 <AnimatedGroup

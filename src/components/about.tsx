@@ -38,7 +38,7 @@ export default function ContentSection() {
           </ScrollView>
           <ScrollView>
             <p>
-              I'm a passionate full stack developer with 6+ years of experience crafting robust web applications. My expertise spans modern frontend frameworks like React and Next.js, backend technologies including Node.js and Laravel, and cloud infrastructure on AWS. I specialize in turning complex business requirements into elegant, scalable solutions.
+              I&apos;m a passionate full stack developer with 6+ years of experience crafting robust web applications. My expertise spans modern frontend frameworks like React and Next.js, backend technologies including Node.js and Laravel, and cloud infrastructure on AWS. I specialize in turning complex business requirements into elegant, scalable solutions.
             </p>
           </ScrollView>
         </div>

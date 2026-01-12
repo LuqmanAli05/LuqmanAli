@@ -14,7 +14,7 @@ export default function StatsSection() {
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              With over 6 years in the industry, I've helped businesses of all sizes build powerful web applications that drive growth and deliver exceptional user experiences.
+              With over 6 years in the industry, I&apos;ve helped businesses of all sizes build powerful web applications that drive growth and deliver exceptional user experiences.
             </p>
           </ScrollView>
         </div>
