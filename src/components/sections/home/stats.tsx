@@ -9,12 +9,12 @@ export default function StatsSection() {
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center">
           <ScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
-              Experience That Delivers Results
+              Proven Track Record in Ecommerce
             </h2>
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              With over 6 years in the industry, I&apos;ve helped businesses of all sizes build powerful web applications that drive growth and deliver exceptional user experiences.
+              With over 6 years in the industry, I&apos;ve helped businesses launch and scale successful online stores, driving millions in revenue through optimized ecommerce solutions and conversion-focused designs.
             </p>
           </ScrollView>
         </div>
@@ -32,7 +32,7 @@ export default function StatsSection() {
               className="space-y-4"
             >
               <div className="text-5xl font-bold">6+</div>
-              <p>Years of Experience</p>
+              <p>Years Building Ecommerce</p>
             </motion.div>
             <motion.div
               variants={{
@@ -45,8 +45,8 @@ export default function StatsSection() {
               }}
               className="space-y-4"
             >
-              <div className="text-5xl font-bold">100+</div>
-              <p>Projects Delivered</p>
+              <div className="text-5xl font-bold">150+</div>
+              <p>Online Stores Launched</p>
             </motion.div>
             <motion.div
               variants={{
@@ -59,8 +59,8 @@ export default function StatsSection() {
               }}
               className="space-y-4"
             >
-              <div className="text-5xl font-bold">50+</div>
-              <p>Happy Clients</p>
+              <div className="text-5xl font-bold">$5M+</div>
+              <p>Revenue Generated</p>
             </motion.div>
           </div>
         </ScrollView>

@@ -4,25 +4,24 @@ import Image from "next/image";
 
 const ourPrinciples = [
   {
-    title: "Clean Code",
+    title: "Conversion-Focused",
     description:
-      "I write maintainable, scalable code that follows best practices and industry standards.",
+      "Every design decision is made to maximize conversions and drive real business results.",
   },
   {
-    title: "User-Centric",
+    title: "Mobile-First",
     description:
-      "Every project starts with understanding user needs and delivering exceptional experiences.",
-  },
-
-  {
-    title: "Performance First",
-    description:
-      "Optimized applications that load fast and scale efficiently under any load.",
+      "Responsive designs that deliver seamless shopping experiences across all devices.",
   },
   {
-    title: "Continuous Learning",
+    title: "Performance Optimized",
     description:
-      "Staying current with the latest technologies and best practices in web development.",
+      "Fast-loading stores with optimized images, caching, and CDN integration for better SEO.",
+  },
+  {
+    title: "Scalable Solutions",
+    description:
+      "Built to grow with your business, from startup to enterprise-level operations.",
   },
 ];
 
@@ -38,7 +37,7 @@ export default function ContentSection() {
           </ScrollView>
           <ScrollView>
             <p>
-              I&apos;m a passionate full stack developer with 6+ years of experience crafting robust web applications. My expertise spans modern frontend frameworks like React and Next.js, backend technologies including Node.js and Laravel, and cloud infrastructure on AWS. I specialize in turning complex business requirements into elegant, scalable solutions.
+              I&apos;m a specialized ecommerce and business website developer with 6+ years of experience building high-converting online stores and professional business websites. My expertise includes WordPress, WooCommerce, Shopify, and Elementor, combined with custom development using React, Next.js, and Laravel. I help businesses establish powerful online presence and drive sales through strategic web solutions.
             </p>
           </ScrollView>
         </div>

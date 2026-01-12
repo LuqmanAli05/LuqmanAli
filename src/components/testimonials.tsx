@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ScrollView } from "./scroll-view";
-import Image from "next/image";
 
 export default function Testimonials() {
   return (
@@ -10,14 +9,12 @@ export default function Testimonials() {
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <ScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
-              Build by makers, loved by thousand developers
+              Trusted by Ecommerce Businesses Worldwide
             </h2>
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              Gemini is evolving to be more than just the models. It supports an
-              entire to the APIs and platforms helping developers and businesses
-              innovate.
+              Real results from real clients. See how I&apos;ve helped businesses launch successful online stores, increase conversions, and grow their revenue.
             </p>
           </ScrollView>
         </div>
@@ -26,43 +23,32 @@ export default function Testimonials() {
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-rows-2">
             <Card className="grid grid-rows-[auto_1fr] gap-8 sm:col-span-2 sm:p-6 lg:row-span-2">
               <CardHeader>
-                <Image
-                  className="h-6 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/nike.svg"
-                  alt="Nike Logo"
-                  height={24}
-                  width={120}
-                />
+                <div className="text-2xl font-bold">FashionHub</div>
               </CardHeader>
               <CardContent>
                 <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
                   <p className="text-xl font-medium">
-                    Tailus has transformed the way I develop web applications.
-                    Their extensive collection of UI components, blocks, and
-                    templates has significantly accelerated my workflow. The
-                    flexibility to customize every aspect allows me to create
-                    unique user experiences. Tailus is a game-changer for modern
-                    web development
+                    Luqman built our WooCommerce store from scratch and the results exceeded our expectations. Sales increased by 240% in the first 3 months. His attention to detail in optimizing the checkout process and mobile experience made all the difference. The store is fast, beautiful, and easy to manage.
                   </p>
 
                   <div className="grid grid-cols-[auto_1fr] items-center gap-3">
                     <Avatar className="size-12">
                       <AvatarImage
-                        src="https://tailus.io/images/reviews/shekinah.webp"
-                        alt="Shekinah Tshiokufila"
+                        src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah"
+                        alt="Sarah Mitchell"
                         height="400"
                         width="400"
                         loading="lazy"
                       />
-                      <AvatarFallback>ST</AvatarFallback>
+                      <AvatarFallback>SM</AvatarFallback>
                     </Avatar>
 
                     <div>
                       <cite className="text-sm font-medium">
-                        Shekinah Tshiokufila
+                        Sarah Mitchell
                       </cite>
                       <span className="text-muted-foreground block text-sm">
-                        Software Ingineer
+                        CEO, FashionHub
                       </span>
                     </div>
                   </div>
@@ -73,27 +59,26 @@ export default function Testimonials() {
               <CardContent className="h-full pt-6">
                 <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
                   <p className="text-xl font-medium">
-                    Tailus is really extraordinary and very practical, no need
-                    to break your head. A real gold mine.
+                    Our Shopify store migration was seamless. Luqman handled everything from product import to custom theme development. The new store loads in under 2 seconds and our conversion rate jumped by 65%. Highly recommend!
                   </p>
 
                   <div className="grid grid-cols-[auto_1fr] items-center gap-3">
                     <Avatar className="size-12">
                       <AvatarImage
-                        src="https://tailus.io/images/reviews/jonathan.webp"
-                        alt="Jonathan Yombo"
+                        src="https://api.dicebear.com/7.x/avataaars/svg?seed=Michael"
+                        alt="Michael Chen"
                         height="400"
                         width="400"
                         loading="lazy"
                       />
-                      <AvatarFallback>JY</AvatarFallback>
+                      <AvatarFallback>MC</AvatarFallback>
                     </Avatar>
                     <div>
                       <cite className="text-sm font-medium">
-                        Jonathan Yombo
+                        Michael Chen
                       </cite>
                       <span className="text-muted-foreground block text-sm">
-                        Software Ingineer
+                        Founder, TechGear Pro
                       </span>
                     </div>
                   </div>
@@ -104,27 +89,26 @@ export default function Testimonials() {
               <CardContent className="h-full pt-6">
                 <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
                   <p>
-                    Great work on tailfolio template. This is one of the best
-                    personal website that I have seen so far!
+                    Professional WordPress site with Elementor customization. The booking system works perfectly and we&apos;ve seen a 3x increase in online appointments. Clean design and lightning fast!
                   </p>
 
                   <div className="grid items-center gap-3 [grid-template-columns:auto_1fr]">
                     <Avatar className="size-12">
                       <AvatarImage
-                        src="https://tailus.io/images/reviews/yucel.webp"
-                        alt="Yucel Faruksahan"
+                        src="https://api.dicebear.com/7.x/avataaars/svg?seed=Emma"
+                        alt="Emma Rodriguez"
                         height="400"
                         width="400"
                         loading="lazy"
                       />
-                      <AvatarFallback>YF</AvatarFallback>
+                      <AvatarFallback>ER</AvatarFallback>
                     </Avatar>
                     <div>
                       <cite className="text-sm font-medium">
-                        Yucel Faruksahan
+                        Emma Rodriguez
                       </cite>
                       <span className="text-muted-foreground block text-sm">
-                        Creator, Tailkits
+                        Owner, Bella Spa & Wellness
                       </span>
                     </div>
                   </div>
@@ -135,25 +119,24 @@ export default function Testimonials() {
               <CardContent className="h-full pt-6">
                 <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
                   <p>
-                    Great work on tailfolio template. This is one of the best
-                    personal website that I have seen so far!
+                    Built our multi-vendor marketplace on WooCommerce with custom vendor dashboards. Revenue hit $50K in the first month. Luqman&apos;s technical expertise is outstanding!
                   </p>
 
                   <div className="grid grid-cols-[auto_1fr] gap-3">
                     <Avatar className="size-12">
                       <AvatarImage
-                        src="https://tailus.io/images/reviews/rodrigo.webp"
-                        alt="Rodrigo Aguilar"
+                        src="https://api.dicebear.com/7.x/avataaars/svg?seed=David"
+                        alt="David Thompson"
                         height="400"
                         width="400"
                         loading="lazy"
                       />
-                      <AvatarFallback>YF</AvatarFallback>
+                      <AvatarFallback>DT</AvatarFallback>
                     </Avatar>
                     <div>
-                      <p className="text-sm font-medium">Rodrigo Aguilar</p>
+                      <p className="text-sm font-medium">David Thompson</p>
                       <span className="text-muted-foreground block text-sm">
-                        Creator, TailwindAwesome
+                        CEO, MarketPlace Hub
                       </span>
                     </div>
                   </div>

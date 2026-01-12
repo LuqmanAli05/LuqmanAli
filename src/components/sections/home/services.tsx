@@ -15,22 +15,22 @@ import { ArrowRight, PlusIcon } from "lucide-react";
 
 const services = [
   {
-    title: "Branding",
+    title: "WooCommerce Stores",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-    image: "/images/abstract-3.png",
+      "Custom WooCommerce development with advanced features like multi-vendor support, subscription services, custom payment gateways, and inventory management. Optimized for performance and conversions with mobile-first responsive design.",
+    image: "/images/woocommerce-service.png",
   },
   {
-    title: "Branding",
+    title: "Shopify Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-    image: "/images/abstract-4.png",
+      "Complete Shopify store setup and customization including theme development, app integration, product migration, and custom functionality. From dropshipping to enterprise-level stores with seamless checkout experiences.",
+    image: "/images/shopify-service.png",
   },
   {
-    title: "Branding",
+    title: "WordPress Business Sites",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-    image: "/images/abstract-5.png",
+      "Professional WordPress websites using Elementor for stunning designs. Custom themes, plugins, SEO optimization, contact forms, booking systems, and membership areas. Fast, secure, and easy to manage.",
+    image: "/images/wordpress-service.png",
   },
 ];
 
@@ -41,14 +41,12 @@ export default function ServicesSection() {
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center">
           <ScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
-              Tailus UI in numbers
+              Services That Drive Sales
             </h2>
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              Gemini is evolving to be more than just the models. It supports an
-              entire to the APIs and platforms helping developers and businesses
-              innovate.
+              From WooCommerce and Shopify stores to custom WordPress websites, I deliver complete ecommerce solutions that convert visitors into customers and help businesses scale.
             </p>
           </ScrollView>
         </div>
