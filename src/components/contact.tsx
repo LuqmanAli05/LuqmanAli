@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, MapPin, PhoneCall } from "lucide-react";
+import { Mail, Send, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -64,7 +64,7 @@ export default function FeaturesSection() {
               <ul className="mt-8 divide-y border-y *:flex *:items-center *:gap-3 *:py-3">
                 <li>
                   <Link href="https://wa.me/923365102108" className="hover:text-accent-foreground">
-                    <Mail className="size-5 mr-2 inline" />
+                    <MessageCircle className="size-5 mr-2 inline" />
                     <span>Send a message on WhatsApp</span>
                   </Link>
                 </li>
@@ -179,7 +179,8 @@ export default function FeaturesSection() {
                     <Textarea id="msg" name="message" rows={3} required />
                   </div>
 
-                  <Button type="submit" disabled={isSubmitting}>
+                  <Button type="submit" className="cursor-pointer" disabled={isSubmitting}>
+                    <Send className="size-4" />
                     {isSubmitting ? "Sending..." : "Submit"}
                   </Button>
                 </form>

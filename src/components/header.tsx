@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
 import { Logo } from "./logo";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { NAV_LINKS } from "@/content/nav";
+import { ThemeToggle } from "./theme-toggle";
 
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
@@ -81,14 +82,16 @@ export const HeroHeader = () => {
                   ))}
                 </ul>
               </div>
-              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit md:items-center">
+                <ThemeToggle />
                 <Button
                   asChild
                   size="sm"
                   // className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
                   className="lg:inline-flex"
                 >
-                  <Link href="/#contact">
+                  <Link href="/#contact" className="flex items-center gap-2">
+                    <Send className="size-4" />
                     <span>Get in touch</span>
                   </Link>
                 </Button>
