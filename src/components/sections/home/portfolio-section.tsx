@@ -2,7 +2,7 @@
 
 import PortfolioCard from "@/components/portfolio-card";
 import { PORTFOLIO_CONTENT } from "@/content/portfolio";
-import { ArrowRight } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { useState } from "react";
 
 const ITEMS_PER_PAGE = 6;
@@ -50,10 +50,10 @@ export default function PortfolioSection() {
               <div className="bg-background group-hover:bg-muted size-8 overflow-hidden rounded-full duration-500 -rotate-45 ">
                 <div className="flex w-16 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
                   <span className="flex size-8">
-                    <ArrowRight className="m-auto size-4" />
+                    <ArrowDown className="m-auto size-4" />
                   </span>
                   <span className="flex size-8">
-                    <ArrowRight className="m-auto size-4" />
+                    <ArrowDown className="m-auto size-4" />
                   </span>
                 </div>
               </div>
