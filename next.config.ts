@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
     ],
   },
 
+  // Ensure environment variables are available
+  env: {
+    RESEND_API_KEY: process.env.RESEND_API_KEY,
+  },
+
   // Add any production-specific settings here
   ...(isProduction && {
     // Example: compress in production

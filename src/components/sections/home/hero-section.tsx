@@ -142,7 +142,6 @@ export default function HeroSection() {
                     >
                       <Link
                         href="#contact"
-                        target="_blank"
                       >
                         <Send className="size-4" />
                         <span className="text-nowrap">Get in touch</span>
