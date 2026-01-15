@@ -1,8 +1,17 @@
 "use server";
 
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Create SMTP transporter
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: parseInt(process.env.SMTP_PORT || "587"),
+  secure: process.env.SMTP_SECURE === "true", // true for 465, false for other ports
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
 export async function sendContactEmail(formData: FormData) {
   const name = formData.get("name") as string;
@@ -28,9 +37,10 @@ export async function sendContactEmail(formData: FormData) {
   }
 
   try {
-    const { data, error } = await resend.emails.send({
-      from: "Contact Form <contact@luqmanali.com>",
-      to: "luqmanali05@hotmail.com",
+    // Send email using SMTP
+    const info = await transporter.sendMail({
+      from: `"Contact Form" <${process.env.SMTP_FROM || process.env.SMTP_USER}>`,
+      to: process.env.SMTP_TO || "luqmanali05@hotmail.com",
       replyTo: email,
       subject: `Contact Form: ${subject}`,
       html: `
@@ -41,19 +51,21 @@ export async function sendContactEmail(formData: FormData) {
         <p><strong>Message:</strong></p>
         <p>${message.replace(/\n/g, "<br>")}</p>
       `,
+      text: `
+        New Contact Form Submission
+
+        Name: ${name}
+        Email: ${email}
+        Subject: ${subject}
+        Message: ${message}
+      `,
     });
 
-    if (error) {
-      console.error("Resend error:", error);
-      return {
-        success: false,
-        error: "Failed to send email. Please try again later.",
-      };
-    }
+    console.log("Email sent:", info.messageId);
 
     return {
       success: true,
-      data,
+      data: info,
     };
   } catch (error) {
     console.error("Error sending email:", error);

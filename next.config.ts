@@ -18,7 +18,13 @@ const nextConfig: NextConfig = {
 
   // Ensure environment variables are available
   env: {
-    RESEND_API_KEY: process.env.RESEND_API_KEY,
+    SMTP_HOST: process.env.SMTP_HOST,
+    SMTP_PORT: process.env.SMTP_PORT,
+    SMTP_SECURE: process.env.SMTP_SECURE,
+    SMTP_USER: process.env.SMTP_USER,
+    SMTP_PASS: process.env.SMTP_PASS,
+    SMTP_FROM: process.env.SMTP_FROM,
+    SMTP_TO: process.env.SMTP_TO,
   },
 
   // Add any production-specific settings here
