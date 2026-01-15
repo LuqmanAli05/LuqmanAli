@@ -2,16 +2,16 @@ import { cn } from "@/lib/utils";
 
 export const Logo = ({ className }: { className?: string }) => {
   return (
-    <svg width="50" height="35" viewBox="0 0 65 45" xmlns="http://www.w3.org/2000/svg">
+    <svg width="50" height="35" viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M8 5 V35 H20"
+        d="M5 5 V35 H17"
         stroke="currentColor"
         strokeWidth="3"
         strokeLinecap="square"
         fill="none"
       />
       <path
-        d="M30 5 L42 5 L36 35 Z"
+        d="M27 5 L39 5 L33 35 Z"
         fill="none"
         stroke="currentColor"
         strokeWidth="3"
