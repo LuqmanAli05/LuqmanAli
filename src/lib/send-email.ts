@@ -29,8 +29,8 @@ export async function sendContactEmail(formData: FormData) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>", // You'll update this after verifying your domain
-      to: "contact@luqmanali.com",
+      from: "Contact Form <contact@luqmanali.com>",
+      to: "luqmanali05@hotmail.com",
       replyTo: email,
       subject: `Contact Form: ${subject}`,
       html: `
