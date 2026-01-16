@@ -44,12 +44,30 @@ export async function sendContactEmail(formData: FormData) {
       replyTo: email,
       subject: `Contact Form: ${subject}`,
       html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, "<br>")}</p>
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
+          <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px;">
+            <h2 style="color: #2c3e50; margin-bottom: 20px;">New Contact Form Submission</h2>
+            <div style="background-color: white; padding: 20px; border-radius: 5px;">
+              <p style="margin: 10px 0;"><strong style="color: #2c3e50;">Name:</strong> ${name}</p>
+              <p style="margin: 10px 0;"><strong style="color: #2c3e50;">Email:</strong> <a href="mailto:${email}" style="color: #3498db;">${email}</a></p>
+              <p style="margin: 10px 0;"><strong style="color: #2c3e50;">Subject:</strong> ${subject}</p>
+              <div style="margin-top: 20px; padding-top: 20px; border-top: 2px solid #f4f4f4;">
+                <p style="margin: 10px 0;"><strong style="color: #2c3e50;">Message:</strong></p>
+                <p style="margin: 10px 0; white-space: pre-wrap;">${message.replace(/\n/g, "<br>")}</p>
+              </div>
+            </div>
+            <p style="margin-top: 20px; font-size: 12px; color: #7f8c8d; text-align: center;">
+              This email was sent from the contact form at luqmanali.com
+            </p>
+          </div>
+        </body>
+        </html>
       `,
       text: `
         New Contact Form Submission

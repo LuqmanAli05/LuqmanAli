@@ -19,9 +19,13 @@ export default function FeaturesSection() {
     message: string;
   }>({ type: null, message: "" });
 
-  async function handleSubmit(formData: FormData) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
 
     const result = await sendContactEmail(formData);
 
@@ -31,8 +35,7 @@ export default function FeaturesSection() {
         message: "Thank you! Your message has been sent successfully.",
       });
       // Reset form
-      const form = document.querySelector("form") as HTMLFormElement;
-      form?.reset();
+      form.reset();
     } else {
       setSubmitStatus({
         type: "error",
@@ -109,7 +112,7 @@ export default function FeaturesSection() {
                 </div>
 
                 <form
-                  action={handleSubmit}
+                  onSubmit={handleSubmit}
                   className="**:[&>label]:block mt-12 space-y-6 *:space-y-3"
                 >
                   {submitStatus.type && (
@@ -126,17 +129,17 @@ export default function FeaturesSection() {
 
                   <div>
                     <Label htmlFor="name">Full name</Label>
-                    <Input type="text" id="name" name="name" required />
+                    <Input type="text" id="name" name="name" required disabled={isSubmitting} />
                   </div>
 
                   <div>
                     <Label htmlFor="email">Email</Label>
-                    <Input type="email" id="email" name="email" required />
+                    <Input type="email" id="email" name="email" required disabled={isSubmitting} />
                   </div>
 
                   <div>
                     <Label htmlFor="subject">Subject</Label>
-                    <Input type="text" id="subject" name="subject" required />
+                    <Input type="text" id="subject" name="subject" required disabled={isSubmitting} />
                   </div>
 
                   {/* <div>
@@ -176,12 +179,12 @@ export default function FeaturesSection() {
 
                   <div>
                     <Label htmlFor="msg">Message</Label>
-                    <Textarea id="msg" name="message" rows={3} required />
+                    <Textarea id="msg" name="message" rows={3} required disabled={isSubmitting} />
                   </div>
 
-                  <Button type="submit" className="cursor-pointer" disabled={isSubmitting}>
+                  <Button type="submit" className="cursor-pointer flex items-center gap-2" disabled={isSubmitting}>
                     <Send className="size-4" />
-                    {isSubmitting ? "Sending..." : "Submit"}
+                    <span>{isSubmitting ? "Sending..." : "Submit"}</span>
                   </Button>
                 </form>
               </Card>
