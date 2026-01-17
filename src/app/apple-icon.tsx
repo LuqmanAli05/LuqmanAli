@@ -20,19 +20,19 @@ export default function AppleIcon() {
           alignItems: 'center',
           justifyContent: 'center',
           background: '#000',
-          borderRadius: '100px',
+          borderRadius: '100%',
         }}
       >
-        <svg width="100" height="80" viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg">
+        <svg width="70" height="60" viewBox="0 0 44 40" xmlns="http://www.w3.org/2000/svg">
           <path
-            d="M5 5 V35 H17"
+            d="M3 5 V35 H15"
             stroke="white"
             strokeWidth="3"
             strokeLinecap="square"
             fill="none"
           />
           <path
-            d="M27 5 L39 5 L33 35 Z"
+            d="M25 5 L37 5 L31 35 Z"
             fill="none"
             stroke="white"
             strokeWidth="3"

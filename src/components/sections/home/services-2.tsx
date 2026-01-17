@@ -18,10 +18,11 @@ export default function ServicesSection2() {
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              At Lume Studio, we create designs that are more than just visually
-              appealing. They&apos;re built to solve problems, connect with
-              audience, and drive results. <br /> Whether you’re starting fresh
-              or refining your existing identity, <br /> we’ve got you covered.
+              I create custom web solutions that are more than just visually
+              appealing. They&apos;re built to solve real problems, engage your
+              audience, and drive measurable results. <br /> Whether you need a new website,
+              an ecommerce platform, or a custom web application, <br /> I deliver tailored solutions
+              designed specifically for your business.
             </p>
           </ScrollView>
         </div>
@@ -67,13 +68,6 @@ export default function ServicesSection2() {
                     </div>
                   </div>
                   <div className=" lg:col-span-3">
-                    <CustomCursorElement
-                      cursor={
-                        <div className="text-zinc-950 text-lg font-medium">
-                          View
-                        </div>
-                      }
-                    >
                       <InView
                         variants={{
                           hidden: {
@@ -112,7 +106,6 @@ export default function ServicesSection2() {
                           />
                         </Link>
                       </InView>
-                    </CustomCursorElement>
                   </div>
                 </div>
               </div>

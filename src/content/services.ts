@@ -8,7 +8,7 @@ export const SERVICES_LIST = [
       "Prototyping",
       "User Research",
     ],
-    img: "/images/abstract-5.png",
+    img: "/images/ui-ux.svg",
     url: "#",
     description:
       "Creating intuitive, user-centered designs that combine aesthetics with functionality. From wireframes to high-fidelity prototypes, delivering seamless user experiences across all devices.",
@@ -22,7 +22,7 @@ export const SERVICES_LIST = [
       "Tailwind CSS",
       "Bootstrap",
     ],
-    img: "/images/abstract-1.png",
+    img: "/images/frontend.svg",
     url: "#",
     description:
       "Building responsive, performant user interfaces with modern JavaScript frameworks. Specializing in React and Next.js for seamless, interactive web experiences that engage users.",
@@ -36,7 +36,7 @@ export const SERVICES_LIST = [
       "MySQL",
       "REST APIs",
     ],
-    img: "/images/abstract-2.png",
+    img: "/images/backend.svg",
     url: "#",
     description:
       "Robust server-side solutions with scalable architectures. Expert in Node.js and PHP frameworks, designing secure APIs and efficient database systems for complex applications.",
@@ -50,7 +50,7 @@ export const SERVICES_LIST = [
       "Elementor",
       "Business Sites",
     ],
-    img: "/images/abstract-3.png",
+    img: "/images/cms.svg",
     url: "#",
     description:
       "Professional business websites and ecommerce solutions using WordPress, Shopify, and WooCommerce. From corporate sites with Elementor to full-featured online stores with payment integration and inventory management.",

@@ -2,6 +2,7 @@
 
 import { UseInViewOptions, motion } from "motion/react";
 import { InView } from "./motion-primitives/in-view";
+import { useState, useEffect } from "react";
 
 export function ScrollView({
   children,
@@ -14,10 +15,18 @@ export function ScrollView({
   delay?: number;
   viewMargin?: UseInViewOptions["margin"];
 }) {
+  const [blurAmount, setBlurAmount] = useState(12);
+
+  useEffect(() => {
+    // Reduce blur on mobile for better performance
+    const isMobile = window.innerWidth < 768;
+    setBlurAmount(isMobile ? 4 : 12);
+  }, []);
+
   return (
     <InView
       variants={{
-        hidden: { opacity: 0, y: 20, filter: "blur(12px)" },
+        hidden: { opacity: 0, y: 20, filter: `blur(${blurAmount}px)` },
         visible: {
           opacity: 1,
           y: 0,

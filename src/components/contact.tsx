@@ -182,8 +182,8 @@ export default function FeaturesSection() {
                     <Textarea id="msg" name="message" rows={3} required disabled={isSubmitting} />
                   </div>
 
-                  <Button type="submit" className="cursor-pointer flex items-center gap-2" disabled={isSubmitting}>
-                    <Send className="size-4" />
+                  <Button type="submit" className="cursor-pointer inline-flex items-center gap-2"  disabled={isSubmitting}>
+                    <Send className="size-4 m-0 margin-block-end-0" />
                     <span>{isSubmitting ? "Sending..." : "Submit"}</span>
                   </Button>
                 </form>

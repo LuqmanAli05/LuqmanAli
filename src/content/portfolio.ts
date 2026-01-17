@@ -3,7 +3,7 @@ export const PORTFOLIO_CONTENT = [
     name: "E-Commerce Platform",
     description:
       "Full-stack e-commerce solution built with Next.js and Node.js, featuring real-time inventory, secure payments, and advanced analytics dashboard.",
-    img: "/images/portfolio/eco.jpg",
+    img: "/images/portfolio/ico.png",
     url: "#",
   },
   {

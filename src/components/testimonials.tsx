@@ -9,12 +9,12 @@ export default function Testimonials() {
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <ScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
-              Trusted by Ecommerce Businesses Worldwide
+              Trusted by Businesses Worldwide
             </h2>
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              Real results from real clients. See how I&apos;ve helped businesses launch successful online stores, increase conversions, and grow their revenue.
+              Real results from real clients. See how I&apos;ve helped businesses launch successful websites, custom web applications, and digital solutions that drive growth.
             </p>
           </ScrollView>
         </div>

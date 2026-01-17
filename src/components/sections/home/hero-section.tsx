@@ -104,7 +104,7 @@ export default function HeroSection() {
                   as="h1"
                   className="mt-8 text-balance text-5xl md:text-7xl lg:mt-16 xl:text-[5.25rem] font-semibold"
                 >
-                  Full Stack Developer. Designer. Digital Craftsman.
+                  Website Developer. Designer. Custom Solutions Architect.
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -114,7 +114,7 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  Hi, I&apos;m Luqman Ali, a full-stack developer with 6+ years of experience building scalable web applications, stunning UI/UX designs, and powerful business solutions. From React and Next.js to WordPress and Shopify, I create digital experiences that combine beautiful design with robust functionality.
+                  Hi, I&apos;m Luqman Ali, a website developer & designer with 6+ years of experience crafting custom web solutions, from modern web applications to business websites and e-commerce platforms. Specializing in React, Next.js, WordPress, and Shopify, I build digital experiences that blend stunning design with powerful functionality tailored to your business needs.
                 </TextEffect>
 
                 <AnimatedGroup

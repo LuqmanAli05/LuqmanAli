@@ -37,7 +37,7 @@ export default function ContentSection() {
           </ScrollView>
           <ScrollView>
             <p>
-              I&apos;m a full-stack developer with 6+ years of experience crafting complete web solutions from concept to deployment. My expertise spans UI/UX design, modern frontend frameworks (React, Next.js), backend technologies (Node.js, Laravel), and content management systems including WordPress, Shopify, and WooCommerce. Whether it&apos;s a custom web application, business website, or ecommerce platform, I deliver scalable solutions that drive results.
+              I&apos;m a website developer & designer with 6+ years of experience creating custom web solutions from concept to deployment. My expertise spans UI/UX design, modern frontend frameworks (React, Next.js), backend technologies (Node.js, Laravel), and content management systems including WordPress, Shopify, and WooCommerce. Whether it&apos;s a custom web application, professional business website, or e-commerce platform, I deliver tailored solutions that perfectly fit your needs and drive real results.
             </p>
           </ScrollView>
         </div>
