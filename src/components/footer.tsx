@@ -104,7 +104,7 @@ export default function FooterSection() {
               </svg>
             </Link>
             <Link
-              href="https://upwork.com/freelancers/luqmanali"
+              href="https://upwork.com/freelancers/luqmanalee05"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Upwork"

@@ -1,44 +1,65 @@
 export const PORTFOLIO_CONTENT = [
   {
-    name: "E-Commerce Platform",
+    name: "One Touch Leasing",
     description:
-      "Full-stack e-commerce solution built with Next.js and Node.js, featuring real-time inventory, secure payments, and advanced analytics dashboard.",
-    img: "/images/portfolio/ico.png",
+      "Modern leasing platform with streamlined application process, vehicle inventory management, and customer portal for managing lease agreements.",
+    img: "/images/portfolio/one-touch-leasing.png",
     url: "#",
   },
   {
-    name: "SaaS Management Dashboard",
+    name: "Mehdi Fragrances",
     description:
-      "Enterprise SaaS platform with React frontend and Laravel backend. Features include user management, billing integration, and comprehensive reporting.",
-    img: "/images/portfolio/event.jpg",
+      "Luxury fragrance e-commerce store featuring elegant product showcases, scent profiles, and seamless checkout experience.",
+    img: "/images/portfolio/mehdi-fragrances.png",
     url: "#",
   },
   {
-    name: "Educational Portal",
+    name: "Omar Perfumes",
     description:
-      "Interactive learning management system with video streaming, progress tracking, and gamification elements. Built with Next.js and MySQL.",
-    img: "/images/portfolio/art.jpg",
+      "Premium perfume retail website with sophisticated design, product filtering, and integrated inventory management system.",
+    img: "/images/portfolio/omar-perfumes.png",
     url: "#",
   },
   {
-    name: "Real Estate Marketplace",
+    name: "Western Appliances",
     description:
-      "Property listing platform with advanced search filters, virtual tours, and integrated CRM. Powered by React and AWS infrastructure.",
-    img: "/images/portfolio/bike.jpg",
+      "Full-featured appliance e-commerce platform with product comparisons, warranty management, and delivery scheduling.",
+    img: "/images/portfolio/western-appliances.png",
     url: "#",
   },
   {
-    name: "Restaurant POS System",
+    name: "My Social Fame",
     description:
-      "Cloud-based point-of-sale system for restaurants with order management, inventory tracking, and kitchen display integration.",
-    img: "/images/portfolio/resturant.jpg",
+      "Social media marketing platform helping businesses grow their online presence with analytics and campaign management tools.",
+    img: "/images/portfolio/my-social-fame.png",
     url: "#",
   },
   {
-    name: "Healthcare Booking App",
+    name: "Lauren Labeled",
     description:
-      "Patient appointment scheduling system with doctor profiles, telehealth integration, and automated reminders. HIPAA-compliant architecture.",
-    img: "/images/portfolio/meditation.jpg",
+      "Fashion brand e-commerce website with lookbook galleries, size guides, and personalized shopping experience.",
+    img: "/images/portfolio/lauren-labeled.png",
+    url: "#",
+  },
+  {
+    name: "Cheap Virtual Office",
+    description:
+      "Virtual office services platform offering business addresses, mail handling, and meeting room bookings for remote businesses.",
+    img: "/images/portfolio/cheap-virtual-office.png",
+    url: "#",
+  },
+  {
+    name: "London Virtual Address",
+    description:
+      "Professional virtual address service website with package tracking, mail forwarding, and prestigious London business addresses.",
+    img: "/images/portfolio/london-virtual-address.png",
+    url: "#",
+  },
+  {
+    name: "Oz For Solution",
+    description:
+      "Business consulting website showcasing services, case studies, and client success stories with an easy inquiry system.",
+    img: "/images/portfolio/oz-for-solution.png",
     url: "#",
   },
 ];
